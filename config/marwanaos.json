@@ -1,0 +1,18 @@
+{
+    "appearance": "dark",
+    "wallpaper": "wallpaper.png",
+    "hotkey": "<Control-Shift-Alt-R>",
+    "display_guard": {
+        "privacy_enabled": true,
+        "power_guard_enabled": true,
+        "auto_extend": false,
+        "blocked_apps": [
+            "WhatsApp",
+            "Teams",
+            "Discord",
+            "Outlook",
+            "Telegram",
+            "Signal"
+        ]
+    }
+}
