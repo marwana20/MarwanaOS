@@ -2,23 +2,33 @@ import customtkinter as ctk
 
 from core.window_manager import register_window
 from core.version import get_version
+from core.updater import (
+    get_latest_version,
+    is_update_available
+)
 
 
 def open_settings(app):
+
     window = ctk.CTkToplevel(app)
+
     window.title(
         "MarwanaOS // SETTINGS"
     )
+
     window.geometry(
-        "650x500"
+        "650x650"
     )
+
     window.resizable(
         False,
         False
     )
+
     window.configure(
         fg_color="#090909"
     )
+
     register_window(
         window,
         "SETTINGS"
@@ -211,6 +221,117 @@ def open_settings(app):
     )
 
     change_button.pack(
+        anchor="w",
+        padx=30,
+        pady=5
+    )
+
+
+    # ========================================================
+    # UPDATES
+    # ========================================================
+
+    updates_label = ctk.CTkLabel(
+        window,
+        text="UPDATES",
+        font=("Arial", 16, "bold"),
+        text_color="#FFFFFF"
+    )
+
+    updates_label.pack(
+        anchor="w",
+        padx=30,
+        pady=(15, 5)
+    )
+
+
+    update_status = ctk.CTkLabel(
+        window,
+        text=(
+            f"Current version: {get_version()}\n"
+            "Update status: NOT CHECKED"
+        ),
+        justify="left",
+        font=("Consolas", 13),
+        text_color="#888888"
+    )
+
+    update_status.pack(
+        anchor="w",
+        padx=30,
+        pady=(0, 10)
+    )
+
+
+    def check_updates():
+
+        update_button.configure(
+            text="CHECKING...",
+            state="disabled"
+        )
+
+        update_status.configure(
+            text="Checking GitHub for updates...",
+            text_color="#AAAAAA"
+        )
+
+        window.update_idletasks()
+
+
+        latest_version = get_latest_version()
+
+
+        if latest_version is None:
+
+            update_status.configure(
+                text=(
+                    "Could not check for updates.\n"
+                    "Please check your internet connection."
+                ),
+                text_color="#CC5555"
+            )
+
+        elif is_update_available():
+
+            update_status.configure(
+                text=(
+                    f"Current version: {get_version()}\n"
+                    f"Latest version:  {latest_version}\n\n"
+                    "UPDATE AVAILABLE"
+                ),
+                text_color="#55CC88"
+            )
+
+        else:
+
+            update_status.configure(
+                text=(
+                    f"Current version: {get_version()}\n"
+                    f"Latest version:  {latest_version}\n\n"
+                    "YOU ARE UP TO DATE"
+                ),
+                text_color="#55CC88"
+            )
+
+
+        update_button.configure(
+            text="CHECK FOR UPDATES",
+            state="normal"
+        )
+
+
+    update_button = ctk.CTkButton(
+        window,
+        text="CHECK FOR UPDATES",
+        width=250,
+        height=40,
+        corner_radius=8,
+        fg_color="#151515",
+        hover_color="#252525",
+        command=check_updates
+    )
+
+    update_button.pack(
         anchor="w",
         padx=30,
         pady=5
