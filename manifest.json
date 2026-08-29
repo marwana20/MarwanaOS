@@ -1,0 +1,32 @@
+{
+    "version": "0.4.0",
+    "files": {
+        ".gitignore": "7a2bfc130ed619857740b72e503a6487fc4888e9f16887e6f33f1dcac239ebe0",
+        "main - backup.py": "53d919ab095ae8426af937e2c50633a200c8ca972183e1a404b3b21ef41c11b4",
+        "main.py": "2097067e7dd42e23ea6f9917556b1c4e1b38d6299444ac3b98ae7fe702035ca7",
+        "README.md": "650d6e2cf05564f40766bb1b9ce9c62bee3e7140073fd3e5e10860ddca668972",
+        "version.json": "d7a59d51b3a69b5b491c4b59e42dd72bff22f28b3ff3d2d42e3663c30383d2cb",
+        "apps/ahk_center.py": "312d1f0d3dae9796be9d227d3b7027e41a42f692271bebd85a26fff6ff7c1e5b",
+        "apps/display_guard.py": "e1e0237a80c78fc3586986b11fd7e09b405a528c5a48c95d13254f08523f9649",
+        "apps/file_manager.py": "d00e0fdc051fb9af08b248629ef0477d6359c52cc29a0971b506ea825e081ad5",
+        "apps/settings.py": "41c62e697bbe86512f4a65fc5740062626cdc08e2781c3f8ac455af9ed47b723",
+        "apps/system_monitor.py": "5d6aadf7129b5f52e8f1587cc0183c11741cc4a29cd3cde7a2c3e2b239ab2eea",
+        "apps/task_manager.py": "9b759585ce9580ceca10529ff150e4d22c30964475f2e9991b339f356ba43362",
+        "apps/terminal.py": "df3beaace5fd41080f8555dd58ef8c6d1ba08527f35e2c6423d63e6704be4478",
+        "apps/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "assets/wallpaper.png": "ad5ea5ff0f566d2ff6a549254c4fbdd4f73f7a0b8fa33b11247dcb1a8bf70862",
+        "config/marwanaos.json": "fe9dd254d54b0f5777fa0d4bfe5cc4d27d2073015508aa33de19dc7efc5ddea8",
+        "core/config.py": "10158da1c75c8c09e4469f62140be7397a12ebae818dfa6bf6ab068dce918756",
+        "core/hotkeys.py": "bc9d74e7638702f75b564f6789b660b6d5a1c65f90f1dce57c4322f12775d309",
+        "core/system.py": "24612747229efd4ca6fbd996935df6122f3422160c1e59122bd6081f6429d8c1",
+        "core/updater.py": "1cf56b556327c03fb9baa0fda15a1d8ffbd2426fb4b552bfeffd7c3a6cf87f96",
+        "core/version.py": "da149099b7dde794c638acf8930f1cc809a3dfd03c5b1fe1ad67f3c0d035af8b",
+        "core/window_manager.py": "8fa7d7d893e35f94ed1dd4ee215999fd7189b848771500e4127c222486b69106",
+        "core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ui/boot.py": "2bfe7bffae56ec89637db250662db636fc50b4312e40306110e2601edc16069a",
+        "ui/desktop.py": "f6de79aa9c10ba6850e279524ffee5517c945035ba18ee62e5b56cd256056f89",
+        "ui/start_menu.py": "2e05c467d50f08231bdd1691c6958152c5f99d74ea15463a70deea598c02661f",
+        "ui/taskbar.py": "0dc386f6dad11c31bbb026223d4f51e134b3d66b9891c6fdd73f6308e2718621",
+        "ui/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+}
