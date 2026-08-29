@@ -361,3 +361,4 @@ def open_settings(app):
         padx=30,
         pady=20
     )
+
